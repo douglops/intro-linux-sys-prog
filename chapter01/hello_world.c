@@ -1,10 +1,14 @@
 /******************************************************************************
   Title          : hello_world.c
   Author         : Kernighan and Ritchie
-  Created on     :
+  Created on     : ~ 1978
   Description    : A program that prints "hello, world."
   Usage          : hello_world
   Build with     : gcc -o hello_world hello_world.c
+
+  Note:  
+    In the original program, main() did not have a return type.
+    The compiler will generate a warning when this is compiled.
 
 ******************************************************************************
 * Copyright (C) 2025 - Stewart Weiss                                         *
@@ -18,7 +22,7 @@
 *****************************************************************************/
 #include <stdio.h>
 
-void main()
+main()
 {
     printf("hello, world.\n");
 }
