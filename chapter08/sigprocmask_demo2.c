@@ -38,6 +38,8 @@ int main(int argc, char *argv[])
                "Use SIGKILL to terminate me, SIGSTOP to stop me.\n");
         sleep(5);
     }
+
+    /* The following code is unreachable if the while condition is TRUE: */
     if ( -1 == sigprocmask(SIG_SETMASK, &prevsignals, NULL) )
         fatal_error(errno, "sigprocmask()");
     return 0;
