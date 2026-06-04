@@ -8,7 +8,7 @@
   Build with  : gcc -Wall -g -I../include -L../lib -o posix_timer_demo1  \
                   posix_timer_demo1.c -lspl
 
-  NOTE:  This program relies on the assumption that the timer IDs
+  WARNING:  This program relies on the assumption that the timer IDs
   returned by successive calls to timer_create() start at 0 and increase by 1.
   POSIX doesn't require this. In the versions of Linux on which I have tested
   this, they do behave this way. An actual application should not be based on
