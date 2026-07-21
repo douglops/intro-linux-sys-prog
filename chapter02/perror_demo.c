@@ -7,6 +7,8 @@
   Usage          : perror_demo
   Build with     : gcc -o perror_demo perror_demo.c
 
+  Modified July 20, 2026 by SNW - removed colon after gethostname in line 35
+
 ******************************************************************************
 * Copyright (C) 2025 - Stewart Weiss                                         *
 *                                                                            *
@@ -30,7 +32,7 @@ int main(int argc, char *argv[] )
 
     returnvalue =  gethostname(name, len); /* make the call */
     if ( -1 == returnvalue ) {
-        perror("gethostname:");
+        perror("gethostname");
     }
     else
         printf("%s\n", name);
